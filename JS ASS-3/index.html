@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="app.js"></script>
+	<h1>Movie Recommendation App</h1>
+
+	<form>
+		<h2>Enter Your Preferences:</h2>
+		<label for="genre">Genre:</label>
+		<input type="text" id="genre" name="genre"><br>
+
+		<label for="rating">Rating:</label>
+		<input type="number" id="rating" name="rating" min="0" max="10"><br>
+
+		<label for="year">Release Year:</label>
+		<input type="number" id="year" name="year"><br>
+
+		<button type="submit" onclick="recommendMovies()">Get Recommendations</button>
+	</form>
+
+	<section id="recommendations">
+		<h2>Recommended Movies:</h2>
+		<ul id="movieList">
+			<!-- Recommended movies will be displayed here -->
+		</ul>
+	</section>
+
+	<script src="recommendationLogic.js"></script>
+</body>
+</html>
